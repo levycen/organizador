@@ -20,6 +20,9 @@ en:
     show: Show
   description: Description
   hello: Hello world
+  task:
+    errors:
+      invalid_due_date: Invalid due date
   tasks:
     form:
       category: Category
