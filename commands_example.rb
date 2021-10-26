@@ -41,3 +41,20 @@ bundle exec i18n-tasks add-missing
 
 #traduce automaticamente ciertos patrones de traducción
 adding gem 'rails-i18n'
+
+##########=====================================
+Video 23 - Añadiendo el concepto de usuario - Platzi
+
+adding devise to Gemfile
+
+rails g devise:install
+# Crear al modelo usuarios
+rails g devise User
+rake db:migrate
+annotate --models
+
+#ver rutas de usuarios
+rails routes | grep user
+
+#ver la rutas desde el navegador
+http://localhost:3000/rails/info/routes

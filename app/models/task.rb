@@ -12,7 +12,7 @@
 #
 class Task < ApplicationRecord
   belongs_to :category
-  
+
   validates :name, :description, presence: true
   validates :name, uniqueness: { case_sensitive: false }
   validate :due_date_validity
