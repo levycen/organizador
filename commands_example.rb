@@ -61,3 +61,11 @@ rails routes | grep user
 
 #ver la rutas desde el navegador
 http://localhost:3000/rails/info/routes
+
+##########=====================================
+Video 24 - Asignando un propietario a la tarea - Platzi
+
+rails g migration AddOwnerToTask user:references
+rails db:reset
+rails db
+rails db:migrate
