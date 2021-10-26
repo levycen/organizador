@@ -31,3 +31,13 @@ rails db:migrate
 adding gem 'annotate' to Gemfile
 bi
 annotate --models
+
+##########=====================================
+Video 21 -  Internacionalizando los modelos - Platzi
+
+adding gem 'i18n-tasks', '~> 0.7.4'  to Gemfile
+bundle exec i18n-tasks health
+bundle exec i18n-tasks add-missing
+
+#traduce automaticamente ciertos patrones de traducción
+adding gem 'rails-i18n'
