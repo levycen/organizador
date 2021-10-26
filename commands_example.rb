@@ -4,6 +4,9 @@ cd organizador
 yarn add bootstrap jquery popper.js roboto-fontface
 git commit -m "initial commit"
 
+git remote add origin git@github.com:levycen1/organizador.git
+git remote -v
+
 ##########=====================================
 Video 20 - Construye los primeros scaffolds del proyecto - Platzi
 
