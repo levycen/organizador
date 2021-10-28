@@ -69,3 +69,9 @@ rails g migration AddOwnerToTask user:references
 rails db:reset
 rails db
 rails db:migrate
+
+##########=====================================
+Video 25 - Añadiendo participantes a la tarea - Platzi
+
+# creando modelo participantes
+rails g model Participant role:integer user:references task:references

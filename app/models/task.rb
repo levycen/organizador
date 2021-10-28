@@ -12,11 +12,14 @@
 #
 class Task < ApplicationRecord
   belongs_to :category
-  belong_to :owner, class_name: 'User'
+  belongs_to :owner, class_name: 'User'
+  has_many :participating_users, class_name: 'Participant'
+  has_many :participants, through: :participating_users, source: :user
 
   validates :name, :description, presence: true
   validates :name, uniqueness: { case_sensitive: false }
   validate :due_date_validity
+  validates :participating_users, presence: true
 
   def due_date_validity
     return if due_date.blank?
